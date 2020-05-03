@@ -1,11 +1,8 @@
 # -*- encoding: utf-8 -*-
-"""
-Python Aplication Template
-Licence: GPLv3
-"""
+
 
 from flask import url_for, redirect, render_template, flash, g, session
-from flask.ext.login import login_user, logout_user, current_user, login_required
+from flask_login import login_user, logout_user, current_user, login_required
 from app import app, lm
 from forms import ExampleForm, LoginForm
 from models import User
@@ -30,11 +27,11 @@ def new():
 def save():
 	form = ExampleForm()
 	if form.validate_on_submit():
-		print "salvando os dados:"
-		print form.title.data
-		print form.content.data
-		print form.date.data
-		flash('Dados salvos!')
+		print("saving the data:")
+		print(form.title.data)
+		print(form.content.data)
+		print(form.date.data)
+		flash('Saved data!')
 	return render_template('new.html', form=form)
 
 @app.route('/view/<id>/')
