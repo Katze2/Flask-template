@@ -1,8 +1,4 @@
 # -*- encoding: utf-8 -*-
-"""
-Python Aplication Template
-Licence: GPLv3
-"""
 
 from flask import Flask
 from flask_bootstrap import Bootstrap
