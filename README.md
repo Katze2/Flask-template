@@ -18,10 +18,10 @@ Flask-SQLAlchemy - Adds SQLAlchemy support to Flask. Quick and easy.
 Flask-PyMongo - Add PyMongo Support MongoDB.
 Flask-Themes - Flask-Themes makes it easy for your application to support a wide range of appearances.
 Flask-WTF - Flask-Themes makes it easy for your application to support a wide range of appearances.
-Requirements
+# Requirements
 gcc, make, Python 3.0+, python-pip, virtualenv
 
-Instalation
+# Instalation
 First, clone this repository.
 
 $ git clone http://github.com/berlotto/flask-app-template
